@@ -1,2 +1,2 @@
 # ED1
-Práticas do lab de ed1
+Resoluções das listas e anotações da disciplina de Estrutura de Dados 1
