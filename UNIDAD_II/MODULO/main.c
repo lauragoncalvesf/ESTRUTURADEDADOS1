@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "aluno.c"
+#include "aluno.h"
 
 int main(void){
-    Aluno * aluno = (Aluno *) malloc(sizeof(Aluno));
-    if(aluno == NULL){
-        exit(1); 
-    }
-    preenche(aluno);
-    imprime(aluno);
+    Aluno * aluno = alocaAluno(); //aloca
+    preenche(aluno); //preenche
+    imprime(aluno); //imprime
+    free(aluno); //libera aluno
     return 0; 
 }

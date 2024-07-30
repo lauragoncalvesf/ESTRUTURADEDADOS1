@@ -1,12 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "aluno.h"
 
-
-typedef struct aluno{
+struct aluno{
     char nome [20];
     int idade;
     long int matricula;
-}Aluno;
+};
+
+Aluno * alocaAluno(void){
+    Aluno * aluno = (Aluno *) malloc(sizeof(Aluno));
+    if(aluno == NULL){
+        exit(1); 
+    }
+    else{
+        printf("Aluno alocado!\n");
+    }
+    return aluno;
+}
 
 void preenche(Aluno * aluno){
     printf("Informe o nome:\t");
@@ -16,6 +27,6 @@ void preenche(Aluno * aluno){
 }
 
 void imprime(Aluno * aluno){
-    printf("=======================================");
+    printf("=======================================\n");
     printf("Nome: %s\t Idade: %d\t Matricula: %ld", aluno->nome, aluno->idade, aluno->matricula);
 }
