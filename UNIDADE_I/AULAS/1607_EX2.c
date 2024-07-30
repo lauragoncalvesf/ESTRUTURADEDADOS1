@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 struct ponto{
     float x, y;
@@ -21,4 +22,25 @@ int interior (Circulo* c, Ponto* p){
     return (d < c-> r);
 }
 
-int main()
+int main(){
+    Ponto p;
+    Ponto q;
+    Circulo c;
+    printf("Informe o ponto x do centro do circulo: ");
+    scanf("%f", &c.p.x);
+    printf("Informe o ponto y do centro do circulo: ");
+    scanf("%f", &c.p.y);
+    printf("Informe o raio do circulo: ");
+    scanf("%f", &c.r);
+    printf("Informe o ponto x a ser testado: ");
+    scanf("%f", &p.x);
+    printf("Informe o ponto y a ser testado: ");
+    scanf("%f", &p.y);
+    if(interior(&c, &p)){
+        printf("O ponto esta dentro do circulo. \n");
+    } 
+    else{
+        printf("O ponto esta fora do circulo");
+    }
+    return 0;
+}

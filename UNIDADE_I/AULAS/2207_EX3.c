@@ -28,7 +28,7 @@ void preenche_aluno(Alunos *alunos){
     printf("Escolha o documento e informe a opçao escolhida:\n1. CPF: \n2.RG: \n3.SUS: \n4.TITULO ELEITOR: \n5.PASSAPORTE: \t\n");
     printf("===============================================================\n");
     printf("Opcao: ");
-    scanf("%ld", &alunos->opcao_documento);3
+    scanf("%ld", &alunos->opcao_documento);
     printf("Digite o documento: ");
     switch(alunos->opcao_documento){
     case 1:
