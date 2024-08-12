@@ -26,9 +26,9 @@ int main(void){
     media = (nota1 + nota2 + nota3)/3.0;
     // Escreve no arquivo de saída
     if (media >= 7){
-        fprintf(arquivo_de_saida, "%s\t%.1f\tAPROVADO\n");
+        fprintf(arquivo_de_saida, "%s\t%f\tAPROVADO\n");
     } else{
-        fprintf(arquivo_de_saida, "%s\t%.1f\tREPROVADO\n");
+        fprintf(arquivo_de_saida, "%s\t%f\tREPROVADO\n");
     }    
     }
     fclose(arquivo_de_entrada);
