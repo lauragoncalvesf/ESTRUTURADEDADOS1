@@ -1,7 +1,7 @@
 #include <stdio.h> //PARA USAR PRINTF E SCANF 
 #include <stdlib.h> 
 #include <string.h>
-#include "contaBancaria.h"
+#include "ContaBancaria.h"
  
 struct ContaBancaria{
     char titular[20]; //NOME

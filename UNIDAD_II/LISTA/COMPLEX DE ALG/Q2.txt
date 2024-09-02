@@ -1,0 +1,21 @@
+Alg A 
+linha 2 = c1(n) 
+linha 3 = c2(n²)
+linha 4 = c3(n²)
+
+T(n) = c1(n) + c2(n²) + c3(n²)
+T(n) = a(n) + b(n²)
+T(n) = n + n²
+T(n) = n² -> O(n²) 
+
+Alg B 
+linha 2 = c1(n)
+linha 3 = c2(n)
+linha 4 = c3(n)
+linha 5 = c4(n)
+
+T(n) = c1(n) + c2(n) + c3(n) + c4(n)
+T(n) = a(n)
+T(n) = n -> O(n) 
+
+Resp: O segundo é mais eficiente
